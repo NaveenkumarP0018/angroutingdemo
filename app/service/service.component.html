@@ -1,0 +1,13 @@
+<marquee><h1>JSON COMMENTS DATA</h1></marquee>
+<table class="table table-stripped table-bordered">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let b of comm" [ngStyle]="{background:getcolorss(b.id)}">
+    <td><a href="#/service/{{b.id}}">{{b.id}}</a></td>
+    <td>{{b.name}}</td>
+    <td>{{b.email}}</td>
+  </tr>
+</table>

@@ -1,0 +1,17 @@
+div{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    background:darkgray;
+    text-align: center;
+    font-size: 2rem;
+}
+li{
+    display: inline;
+    padding: 1rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}

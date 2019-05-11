@@ -1,0 +1,15 @@
+<marquee><h1>JSON USER DATA</h1></marquee>
+<table class="table table-stripped table-bordered table-hover" >
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>UserName</th>
+  </tr>
+  <tbody *ngIf="users.length">
+    <tr *ngFor="let a of users" [ngClass]="getcolors(a.id)">
+      <td><a href="#/home/{{a.id}}">{{a.id}}</a></td>
+      <td>{{a.name}}</td>
+      <td>{{a.username}}</td>
+    </tr>
+  </tbody>
+</table>
